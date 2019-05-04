@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Open+Sans');
+
+/* Debug Command
+* {
+    border: 1px dashed red;
+}
+*/
+
+/* Basics */
+:root {
+    /* Based on Solarized Color Scheme by Ethan Schoonover */
+    --dark: #073642;
+    --light: rgba(253,246,227,0.6);
+    --primary: #2EC4B6;
+    --secondary: #cb4b16;
+    --content: #657b83;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.4;
+    animation: fadein 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Assistant";
+    font-weight: 200;
+}
+
+p {
+    margin: 0.75rem 0;
+    font-family: "Open Sans";
+}
+
+/* Utility */
+.l-heading {
+    font-size: 5rem;
+}
+
+.m-heading {
+    font-size: 1.2rem;
+}
+
+.s-heading {
+    font-size: 1rem;  
+}
+
+.margin-m {
+    margin-bottom: 2.5rem;
+}
+
+.padY2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padY4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    max-width: 1100px; 
+    margin: auto; 
+    padding: 0 2rem; 
+    overflow: hidden;
+}
+
+/* Splash Page */
+#landing {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    height: 100vh;
+    position: relative; 
+}
+
+#landing::before {
+    content: '';
+    background: url('https://source.unsplash.com/featured/?Japan') no-repeat center center/cover;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#landing .landing-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+#landing .landing-content .splash-text {
+    border-bottom: 2px solid #FFF;
+}
+
+#landing .landing-content .fa-angle-down {
+    position: absolute;
+    bottom: 3rem;
+    color: white;
+    animation: MoveUpDown 1.5s ease-in-out infinite; 
+}
+
+/* About Section */
+#about {
+    background: var(--light);
+    color: var(--content);
+}
+
+#about .container {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap : wrap;
+}
+
+#about .container > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .container > div > img {
+    position:relative;
+    overflow:hidden;
+    border-radius: 50%;
+    height: 20rem;
+    width: 20rem;
+}
+
+.portrait img {
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#about .container > p {
+    flex: 1;
+    flex-wrap: wrap;
+    min-width: 350px;
+    padding: 2rem;
+}
+
+@keyframes MoveUpDown {
+    50% {
+      transform: translate3d(0,1rem,0);
+    }
+  }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
