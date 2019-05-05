@@ -55,16 +55,6 @@ p {
     font-size: 1rem;  
 }
 
-.padY2 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.padY4 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
 .container {
     max-width: 1100px; 
     margin: auto; 
@@ -138,18 +128,50 @@ p {
     padding: 2rem;
 }
 
-/* Image Junk */
-#about .container > div > figure > img {
-    margin: 0 2rem;
-}
 
-#about .container > div > figure > img {
+#about .container img {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
+    margin: 0 2rem
 }
+
+/* Footer */
+#social-media {
+    background: var(--dark);
+    color: var(--light);
+}
+
+#social-media .container {
+    padding: 2rem 0;
+}
+
+#social-media p {
+    text-align: center;
+}
+
+#social-media ul {
+    height: 5vh;
+    list-style: none;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+#social-media ul > li > a {
+    color: white; 
+    display: inline;
+}
+
+#social-media ul > li > a:hover {
+    color: var(--primary);
+    transition: color 0.4s ease;
+}
+
 
 @keyframes MoveUpDown {
     50% {
