@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Assistant:200|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Assistant:200|Roboto:100');
 
-/* Debug Command
-* {
+/* Debug Command */
+
+/* * {
     border: 1px dashed red;
-}
-*/
+} */
+
 
 /* Basics */
 :root {
     /* Based on Solarized Color Scheme by Ethan Schoonover */
-    --dark: #073642;
-    --light: rgba(253,246,227,0.6);
-    --primary: #2EC4B6;
-    --secondary: #cb4b16;
-    --content: #657b83;
+    --dark: #272635;
+    --light: #f0f0f0;
+    --primary: #B1E5F2;
+    --secondary: #FFB49A;
+    --content: #565656;
 }
 
 * {
@@ -32,13 +33,13 @@ a {
 }
 
 h1 {
-    font-family: "Assistant";
-    font-weight: 200;
+    font-family: 'Assistant', sans-serif;
 }
 
 p {
     margin: 0.75rem 0;
-    font-family: "Open Sans";
+    /* font-family: "Open Sans"; */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Utility */
@@ -52,10 +53,6 @@ p {
 
 .s-heading {
     font-size: 1rem;  
-}
-
-.margin-m {
-    margin-bottom: 2.5rem;
 }
 
 .padY2 {
@@ -123,36 +120,35 @@ p {
 #about .container {
     padding: 2rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap : wrap;
+    flex-wrap: wrap;
 }
 
 #about .container > div {
     display: flex; 
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-#about .container > div > img {
-    position:relative;
-    overflow:hidden;
+#about .container p {
+    max-width: 700px;
+    padding: 2rem;
+}
+
+/* Image Junk */
+#about .container > div > figure > img {
+    margin: 0 2rem;
+}
+
+#about .container > div > figure > img {
+    position: relative;
+    overflow: hidden;
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
-}
-
-.portrait img {
-    position: absolute;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-#about .container > p {
-    flex: 1;
-    flex-wrap: wrap;
-    min-width: 350px;
-    padding: 2rem;
 }
 
 @keyframes MoveUpDown {
