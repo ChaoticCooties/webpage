@@ -1,0 +1,65 @@
+/* Basics */
+:root {
+    /* Based on Solarized Color Scheme by Ethan Schoonover */
+    --dark: #272635;
+    --light: #f0f0f0;
+    --primary: #b1e5f2;
+    --secondary: #ffb49a;
+    --content: #565656;
+}
+
+$Assistant: "Assistant", sans-serif;
+$Roboto: "Roboto", sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.4;
+    animation: fadein 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: $Assistant;
+}
+
+p {
+    margin: 0.75rem 0;
+    /* font-family: "Open Sans"; */
+    font-family: $Roboto;
+}
+
+/* Utility */
+.l-heading {
+    font-size: 5rem;
+}
+
+.m-heading {
+    font-size: 3rem;
+}
+
+.s-heading {
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.line-break {
+    height: 2px;
+    width: 6rem;
+    background-color: var(--content);
+    display: block;
+    margin: 0 auto 2rem auto;
+}
