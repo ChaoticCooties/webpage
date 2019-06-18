@@ -67,7 +67,7 @@ p {
       animation: MoveUpDown 1.5s ease-in-out infinite; }
   #landing::before {
     content: "";
-    background: url("../../dist/imgs/splash.jpg") no-repeat center center/cover;
+    background: url("../../imgs/splash.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
