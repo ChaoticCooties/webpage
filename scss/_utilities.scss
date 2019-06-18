@@ -1,12 +1,8 @@
-/* Basics */
-:root {
-    /* Based on Solarized Color Scheme by Ethan Schoonover */
-    --dark: #272635;
-    --light: #f0f0f0;
-    --primary: #b1e5f2;
-    --secondary: #ffb49a;
-    --content: #565656;
-}
+$dark: #272635;
+$light: #f0f0f0;
+$primary: #b1e5f2;
+$secondary: #ffb49a;
+$content: #565656;
 
 $Assistant: "Assistant", sans-serif;
 $Roboto: "Roboto", sans-serif;
@@ -59,7 +55,11 @@ p {
 .line-break {
     height: 2px;
     width: 6rem;
-    background-color: var(--content);
+    background-color: $content;
     display: block;
     margin: 0 auto 2rem auto;
+}
+
+.strike-through {
+    text-decoration: line-through;
 }
