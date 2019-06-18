@@ -1,11 +1,11 @@
 //Smooth Scrolling
-$('a').on('click', function(event) {
-    if (this.hash !== '') {
+$("a").on("click", function(event) {
+    if (this.hash !== "") {
         event.preventDefault();
 
-        const hash = this.hash; 
+        const hash = this.hash;
 
-        $('html, body').animate(
+        $("html, body").animate(
             {
                 scrollTop: $(hash).offset().top - 100
             },
@@ -13,3 +13,5 @@ $('a').on('click', function(event) {
         );
     }
 });
+
+//TODO remove jquery dependency
